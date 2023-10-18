@@ -139,7 +139,7 @@ a {
     padding: 10px 30px;
     border: solid #f44e4e 2px;
     box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
-    border-radius: 50px;
+    border-radius: 5px;
     transition : 1120ms;
     transform: translateY(0);
     display: flex;
