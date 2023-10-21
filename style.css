@@ -149,19 +149,27 @@ a {
     text-transform: lowercase;
 }
 
+.btn
+{
+    margin-top: 5px;
+    width: 120px;
+    height: 50px;
+}
 button {
     background-color: transparent;
-    color: rgb(13, 26, 38);
-
+    color: #ffffff;
 }
 
 #navbar .btn:hover{
 
-    transition : 1120ms;
+    transition : 1000ms;
     padding: 5px 20px;
     background-color: #fff;
-    color: rgb(13, 26, 38);
     border: solid 1px #f44e4e;
+}
+
+button:hover {
+    color: rgb(13, 26, 38);
 }
 
 @media(max-width: 1080px) {
