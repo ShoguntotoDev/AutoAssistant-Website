@@ -382,7 +382,7 @@ button:hover {
     padding: 1em 2.1em 1.1em;
     border-radius: 4px;
     margin: 8px;
-    border: none;
+    border: solid 1px #f44e4e;;
     background-color: #F44E4E;
     color: #FFFFFF;
     font-weight: 500;
@@ -394,7 +394,6 @@ button:hover {
 .join-btn:hover {
     transition : 285ms;
     background-color: #fff;
-    border: solid 1px #f44e4e;
     cursor: pointer;
     color: rgb(13, 26, 38);
 }
@@ -474,6 +473,7 @@ button:hover {
 }
 
 .cards-container .box-container .box:hover{
+    transition: 285ms;
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
     transform: scale(1.03);
 }
@@ -533,4 +533,19 @@ button:hover {
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+}
+
+@media(max-width: 768px){
+    #about {
+        flex-direction: column;
+    }
+    #about img {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .content {
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
 }
