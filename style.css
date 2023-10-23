@@ -132,11 +132,9 @@ a {
 }
 
 #navbar .btn {
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    font-size: 11px;
+    font-size: 12px;
     background-color: #f44e4e;
-    padding: 10px 30px;
+    padding: 5px 20px;
     border: solid #f44e4e 2px;
     box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
     border-radius: 5px;
@@ -146,18 +144,10 @@ a {
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    text-transform: lowercase;
-}
-
-.btn
-{
+    text-transform: initial;
     margin-top: 5px;
     width: 120px;
     height: 50px;
-}
-.add-bot{
-    background-color: transparent;
-    color: #ffffff;
 }
 
 #navbar .btn:hover{
@@ -168,8 +158,14 @@ a {
     border: solid 1px #f44e4e;
 }
 
-button:hover {
+.add-bot{
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.add-bot:hover {
     color: rgb(13, 26, 38);
+    cursor: pointer;
 }
 
 @media(max-width: 1080px) {
@@ -481,7 +477,6 @@ button:hover {
 @media (max-width:768px){
     .cards-container{
         padding:20px;
-
     }
 }
 
@@ -548,5 +543,54 @@ button:hover {
         flex: 0 100%;
         max-width: 100%;
         padding: 15px;
+    }
+}
+
+/* Stats */
+#stats {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+#stats .stats-box-container {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 33vw;
+    width: 50%;
+    padding: 0;
+}
+
+#stats .content {
+    width: 50%;
+    padding: 0;
+
+}
+
+#stats .stats-box {
+    margin: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding:30px 20px;
+}
+
+
+#stats .stats-box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+#stats .stats-box p{
+    color:#777;
+    font-size: 15px;
+}
+
+@media(max-width: 768px){
+    #stats .stats-box-container{
+        flex-direction: column;
     }
 }
