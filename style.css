@@ -438,9 +438,8 @@ a {
 
 .cards-container .box-container{
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(270px, 1fr));
-    gap:15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cards-container .box-container .box{
@@ -450,6 +449,8 @@ a {
     background: #fff;
     text-align: center;
     padding:30px 20px;
+    width: 33vw;
+    height: 30vh;
 }
 
 .cards-container .box-container .box img{
@@ -475,8 +476,11 @@ a {
 }
 
 @media (max-width:768px){
-    .cards-container{
-        padding:20px;
+    .cards-container {
+        padding: 20px;
+    }
+    .cards-container .box-container{
+        flex-direction: column;
     }
 }
 
