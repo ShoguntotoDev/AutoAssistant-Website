@@ -522,10 +522,9 @@ a {
 }
 
 .content .add-btn {
-    display: inline-block;
     padding: 1em 2.1em 1.1em;
+    border: solid 1px #f44e4e;
     border-radius: 4px;
-    border: none;
     background-color: #F44E4E;
     color: #FFFFFF;
     font-weight: 500;
@@ -535,6 +534,12 @@ a {
     cursor: pointer;
 }
 
+.content .add-btn:hover
+{
+    transition : 285ms;
+    background-color: #fff;
+    color: rgb(13, 26, 38);
+}
 @media(max-width: 768px){
     #about {
         flex-direction: column;
@@ -613,4 +618,52 @@ a {
     #stats .stats-box-container{
         flex-direction: column;
     }
+}
+
+/* Join support */
+#join-support{
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+    background-color: #F5F7FA;
+}
+
+#join-support h2 {
+    color: #263238;
+    text-align: center;
+    font-size: 60px;
+}
+
+#join-support span {
+    color: #F44E4E;
+}
+
+#join-support .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+#join-support .add-btn {
+    margin-top: 30px;
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    border: none;
+    background-color: #F44E4E;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+#join-support .add-btn:hover {
+    transition : 285ms;
+    background-color: #fff;
+    border: solid 1px #f44e4e;
+    color: rgb(13, 26, 38);
+;
 }
