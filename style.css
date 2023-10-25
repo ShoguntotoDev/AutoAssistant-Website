@@ -560,15 +560,16 @@ a {
 }
 
 #stats .stats-box-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1px;
-    grid-row-gap: 0px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     width: 60%;
 }
-
+.stats-box-first-and-two {
+    display: flex;
+    gap: 120px;
+}
 #stats .content {
     width: 40%;
     padding: 0;
