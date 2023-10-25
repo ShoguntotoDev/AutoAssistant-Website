@@ -8,7 +8,6 @@
 }
 
 body {
-    background: rgb(250, 250, 250);
     font-family: 'Inter', sans-serif;
 }
 
@@ -104,7 +103,7 @@ a {
 #navbar li a:before, #navbar li a:after {
     content: '';
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 1px;
     bottom: -1px;
     background: rgb(13, 26, 38);
@@ -135,7 +134,7 @@ a {
     font-size: 12px;
     background-color: #f44e4e;
     padding: 5px 20px;
-    border: solid #f44e4e 2px;
+    border: solid #f44e4e 1px;
     box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
     border-radius: 5px;
     transition : 250ms;
@@ -153,9 +152,7 @@ a {
 #navbar .btn:hover{
 
     transition : 285ms;
-    padding: 5px 20px;
     background-color: #fff;
-    border: solid 1px #f44e4e;
 }
 
 .add-bot{
@@ -208,7 +205,7 @@ a {
     }
 
     .icon-bars::after {
-        margin-top: 0px;
+        margin-top: 0;
         background: rgb(13, 26, 38);
         content: '';
         position: absolute;
@@ -222,50 +219,47 @@ a {
 
     .icon-bars.overlay {
         background: rgb(97, 114, 129);
-        background: rgb(183, 199, 211);
         width: 20px;
         animation: middleBar 3s infinite 0.5s;
         -webkit-animation: middleBar 3s infinite 0.5s;
     } @keyframes middleBar {
-          0% {width: 0px}
+          0% {width: 0}
           50% {width: 20px}
-          100% {width: 0px}
+          100% {width: 0}
       } @-webkit-keyframes middleBar {
-            0% {width: 0px}
+            0% {width: 0}
             50% {width: 20px}
-            100% {width: 0px}
+            100% {width: 0}
         }
 
     .icon-bars.overlay::before {
         background: rgb(97, 114, 129);
-        background: rgb(183, 199, 211);
         width: 10px;
         animation: topBar 3s infinite 0.2s;
         -webkit-animation: topBar 3s infinite 0s;
     } @keyframes topBar {
-          0% {width: 0px}
+          0% {width: 0}
           50% {width: 10px}
-          100% {width: 0px}
+          100% {width: 0}
       } @-webkit-keyframes topBar {
-            0% {width: 0px}
+            0% {width: 0}
             50% {width: 10px}
-            100% {width: 0px}
+            100% {width: 0}
         }
 
     .icon-bars.overlay::after {
         background: rgb(97, 114, 129);
-        background: rgb(183, 199, 211);
         width: 15px;
         animation: bottomBar 3s infinite 1s;
         -webkit-animation: bottomBar 3s infinite 1s;
     } @keyframes bottomBar {
-          0% {width: 0px}
+          0% {width: 0}
           50% {width: 15px}
-          100% {width: 0px}
+          100% {width: 0}
       } @-webkit-keyframes bottomBar {
-            0% {width: 0px}
+            0% {width: 0}
             50% {width: 15px}
-            100% {width: 0px}
+            100% {width: 0}
         }
 
 
@@ -394,7 +388,7 @@ a {
     color: rgb(13, 26, 38);
 }
 
-@media (max-width: 884px) {
+@media (max-width: 768px) {
     .container {
         margin-top: 10px;
         flex-direction: column;
@@ -419,7 +413,6 @@ a {
 .cards-container{
     margin-top: 120px;
     padding:15px 9%;
-    padding-bottom: 100px;
 }
 
 .cards-container .heading{
@@ -475,27 +468,40 @@ a {
     transform: scale(1.03);
 }
 
-@media (max-width:768px){
-    .cards-container {
-        padding: 20px;
+@media (max-width:768px) {
+
+    .cards-container .heading {
+        font-size: 30px;
     }
-    .cards-container .box-container{
+
+    .cards-container .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
-}
 
+    .cards-container .box-container .box {
+        width: 80%;
+        height: 50%;
+    }
+
+    .cards-container .p-heading {
+        font-size: 15px;
+    }
+}
 /* About */
 #about{
     display: flex;
     align-items: center;
-    width: 85%;
-    margin: auto;
+    width: 100%;
     background-color: #F5F7FA;
 }
 
 #about img {
     flex: 0 50%;
     max-width: 50%;
+    margin: 25px;
     height: auto;
 }
 
@@ -605,7 +611,6 @@ a {
     font-size: 22px;
     padding:10px 0;
     margin: auto 10px;
-
     width: fit-content;
 }
 
@@ -643,14 +648,13 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 4rem;
 }
 
 #join-support .add-btn {
-    margin-top: 30px;
+    margin: 20px;
     padding: 1em 2.1em 1.1em;
     border-radius: 4px;
-    border: none;
+    border: solid 1px #f44e4e;
     background-color: #F44E4E;
     color: #FFFFFF;
     font-weight: 500;
@@ -663,17 +667,24 @@ a {
 #join-support .add-btn:hover {
     transition : 285ms;
     background-color: #fff;
-    border: solid 1px #f44e4e;
     color: rgb(13, 26, 38);
 }
 
+@media (max-width:768px) {
+    #join-support .title {
+        font-size: 25px;
+    }
+    #join-support .add-btn {
+        margin-top: 20px;
+        font-size: 0.70em;
+    }
+}
 /* footer */
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #263238;
-    margin-top: 80px;
     height: 100%;
     width: 100%;
 }
@@ -683,9 +694,12 @@ footer img {
 }
 
 footer p {
+    text-align: center;
+    margin-top: 10px;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.8;
+    font-weight: 400;
 }
 
 footer span
