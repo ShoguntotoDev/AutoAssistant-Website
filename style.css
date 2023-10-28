@@ -379,6 +379,7 @@ a {
     font-size: 0.85em;
     text-transform: uppercase;
     text-align: center;
+    transition: 500ms;
 }
 
 .join-btn:hover {
@@ -544,6 +545,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+    transition: 400ms;
 }
 
 .content .add-btn:hover
@@ -658,6 +660,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+    transition: 500ms;
 }
 
 #join-support .add-btn:hover {
