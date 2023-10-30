@@ -616,8 +616,19 @@ a {
 }
 
 @media(max-width: 768px){
-    #stats .stats-box-container{
+    #stats{
+        flex-direction: column;
+    }
 
+    .stats-box-first-and-two {
+        flex-direction: column;
+    }
+
+    .stats-box {
+        flex-direction: column;
+    }
+    .stats-box-first-and-two {
+        gap: 30px;
     }
 }
 
